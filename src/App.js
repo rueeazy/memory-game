@@ -1,24 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Navbar from './components/Navbar'
+import Jumbotron from './components/Jumbotron'
+import CardSection from './components/CardSection'
+import characters from "./characters.json";
+import './styles/reset.css'
+import './styles/main.css'
 
 function App() {
+  const [celebrities, setCelebrities] = useState(characters)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Navbar />
+      <Jumbotron />
+      <CardSection celebrities={celebrities} />
     </div>
   );
 }
