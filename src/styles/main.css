@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 * {
   box-sizing: border-box; }
 
@@ -5,15 +6,20 @@ html, body {
   height: 100%; }
 
 .container {
+  font-family: 'Montserrat', sans-serif;
   height: 100%;
-  display: grid; }
+  display: grid;
+  background: #553D67; }
 
 .navbar {
+  font-weight: bold;
   display: flex;
   justify-content: space-around;
   align-items: baseline;
-  background: red;
-  box-shadow: 0 3px 6px #999; }
+  background: #242582;
+  box-shadow: 0 3px 6px #999;
+  padding: 1rem;
+  color: #F64C72; }
   .navbar .gameTitle {
     font-size: 3rem; }
   .navbar .scores {
@@ -25,9 +31,10 @@ html, body {
   margin: .25rem 0rem;
   text-align: center;
   font-size: 1.5rem;
-  background-color: red;
+  background-color: #242582;
   padding: 1rem;
-  box-shadow: 0 3px 6px #999; }
+  box-shadow: 0 3px 6px #999;
+  color: #F64C72; }
 
 .cardContainer {
   padding: 0rem 1rem;
@@ -41,18 +48,21 @@ html, body {
 .card {
   height: 250px;
   min-width: 200px;
-  border: 1px solid black;
+  border: 1px solid grey;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 1rem;
   border-radius: 3px;
-  box-shadow: 0px 6px 5px 2px rgba(0, 0, 0, 0.75); }
+  box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.75);
+  background-color: #242582;
+  color: white; }
+  .card:hover {
+    box-shadow: 0 12px 24px #999, 0 12px 24px #999; }
   .card .img {
     width: 100%;
-    height: auto;
-    background: url(); }
+    height: auto; }
   .card .name {
     margin-top: .5rem; }
 

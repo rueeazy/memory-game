@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Card from './Card';
 
 export default function CardSection(props) {
@@ -6,7 +6,7 @@ export default function CardSection(props) {
   return (
     <div className="cardContainer">
       {props.celebrities.map(celeb => {
-        return <Card key={celeb.id} celeb={celeb}/>
+        return <Card key={celeb.id} celeb={celeb} markClick={props.markClick}/>
       })}
     </div>
   );

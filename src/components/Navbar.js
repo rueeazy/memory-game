@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 export default function Navbar(props) {
   return (
@@ -6,8 +6,8 @@ export default function Navbar(props) {
         <div className="navbar">
             <div className="gameTitle">Memory Game</div>
             <div className="scores">
-                <div className="currentScore">Score: 0</div>
-                <div className="highScore">Highest Score: 3</div>
+                <div className="currentScore">Score: {props.score}</div>
+                <div className="highScore">High Score: {props.highScore}</div>
             </div>
         </div>
     </div>
